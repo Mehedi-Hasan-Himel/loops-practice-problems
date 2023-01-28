@@ -1,3 +1,11 @@
+/*
+   1. Loop variable.
+   2. Condition insde while.
+   3. loop body
+   4. Increment or decrement
+*/ 
+
+
 var rostGiven = 0;
 
 while(rostGiven < 7) {
