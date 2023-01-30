@@ -87,7 +87,7 @@
    15. toFixed ?
    Ans: The toFixed() method converts a number into a string, rounding to a specified number of decimals. For example, (10.333).toFixed(2); will return "10.33".
 
-   
+
 */
 
 /* 
@@ -95,17 +95,122 @@
    Array questions for interview. (javascript)
 ================================================
    1. What is array ?
+   Ans: An array in JavaScript is a type of data structure that holds a collection of values. It is considered a non-primitive data type and can be used to store multiple values of any data type (primitive or non-primitive). Arrays are ordered and can be accessed and manipulated using their index, which is a zero-based integer that represents the position of each element in the array.
+
+   Arrays are declared using square brackets [], and values are separated by commas. For example:
+
+   let numbers = [1, 2, 3, 4, 5]; // creates an array of numbers
+   let names = ['John', 'Jane', 'Jim']; // creates an array of strings
+
+   Arrays provide a convenient way to store and manipulate collections of data, and there are many built-in methods and properties available for working with arrays in JavaScript.
+
+
    2. How to declear an array ?
+   Ans: let numbers = [1, 2, 3, 4, 5]; // creates an array of numbers
+
+
    3. What is the purpose of array ?
+   Ans: Arrays provide a convenient way to store and manipulate collections of data, and there are many built-in methods and properties available for working with arrays in JavaScript.
+
+
    4. Number of element in an array ?
+   Ans:  In JavaScript, you can use the `.length` property to get the number of elements in an array. For example:
+
+   let arr = [1, 2, 3, 4, 5];
+   let length = arr.length;
+   console.log(length); // 5
+
+
    5. What is index ?
+   Ans: An index is a position or location of an item in an array or list-like data structure. It is usually represented by a numerical value that starts from 0 for the first item, 1 for the second item, and so on. Indices are used to access and retrieve specific items from an array. For example:
+
+   let arr = [1, 2, 3, 4, 5];
+   console.log(arr[2]); // 3 (accessing the 3rd item, whose index is 2)
+
+
    6. Find the value of an element using index ?
+   Ans:  In JavaScript, you can use the square bracket notation  `[]` with the index of an element to access its value in an array. The index starts from 0 for the first element, 1 for the second element, and so on.
+
+   Here is an example:
+   let arr = [1, 2, 3, 4, 5];
+   console.log(arr[2]); // Output: 3 (accessing the 3rd element, whose index is 2)
+
+
    7. change an element value using index ?
+   Ans: You can change the value of an element in an array by using the index and assigning a new value to it:
+   let arr = [1, 2, 3, 4, 5];
+   arr[2] = 6;
+   console.log(arr); // Output: [1, 2, 6, 4, 5]
+
+
    8. Get the index of an element by value ?
+   Ans: In JavaScript, you can use the `.indexOf()` method to get the index of an element in an array. The method returns the index of the first occurrence of the element in the array. If the element is not found, it returns -1.
+
+   Here is an example:  
+   let arr = [1, 2, 3, 4, 5];
+   let index = arr.indexOf(3);
+   console.log(index); // Output: 2 (the index of the first occurrence of 3)
+
+
    9. What does it mean when you get undefined while gettig the value of an element ?
+   Ans:  Getting undefined while getting the value of an element in JavaScript means that the variable or property you are trying to access has not been assigned a value. This can happen in the following scenarios:
+
+   1.Accessing an array element that doesn't exist:
+   let arr = [1, 2, 3];
+   console.log(arr[3]); // Output: undefined
+
+   2. Accessing an object property that doesn't exist:
+   let obj = { name: 'John', age: 30 };
+   console.log(obj.email); // Output: undefined
+
+   3. Using a variable that has not been declared:
+   console.log(x); // Output: Uncaught ReferenceError: x is not defined
+
+   4. Calling a function that has not been declared:
+   myFunction(); // Output: Uncaught ReferenceError: myFunction is not a function
+
+
    10. How can you add an element in an array at the last position?
+   Ans: In JavaScript, you can use the `.push()` method to add an element at the end of an array. The method returns the new length of the array.  
+   Example: 
+   let arr = [1, 2, 3];
+   arr.push(4);
+   console.log(arr); // Output: [1, 2, 3, 4]
+
+   You can also use the length property to add an element at the end of an array:
+
+   let arr = [1, 2, 3];
+   arr[arr.length] = 4;
+   console.log(arr); // Output: [1, 2, 3, 4]
+
+
    11. How can you remove the last element from an array ?
+   Ans: You can remove the last element from an array in JavaScript using the pop() method:
+   
+   let arr = [1, 2, 3, 4];
+   arr.pop();
+   console.log(arr); // Output: [1, 2, 3]
+
+   You can also use the length property to remove the last element:
+
+   let arr = [1, 2, 3, 4];
+   delete arr[arr.length-1];
+   console.log(arr); // Output: [1, 2, 3, undefined]
+
+
+
    12. Remove the first element from an array ?
+   Ans: You can remove the first element from an array in JavaScript using the shift() method:
+   let arr = [1, 2, 3, 4];
+   arr.shift();
+   console.log(arr); // Output: [2, 3, 4]
+
+   You can also use the splice() method to remove the first element:
+   let arr = [1, 2, 3, 4];
+   arr.splice(0, 1);
+   console.log(arr); // Output: [2, 3, 4]
+
+
 */
 
 /*
