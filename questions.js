@@ -267,18 +267,201 @@ Ans:
 ================================================
 
 1. What is loop ?
+Ans:  In JavaScript, a loop is a control structure that allows you to repeatedly execute a block of code as long as a specified condition is true. There are several types of loops in JavaScript, including for, while, and do-while loops.
+
+
 2. What is for loop ?
+Ans:  A for loop in JavaScript is a type of loop that allows you to repeat a block of code a specific number of times. It consists of three parts: the initial value, the condition to be tested, and the increment or decrement operation. The loop begins with the initial value, continues to run as long as the condition is true, and stops once the condition is false. The increment or decrement operation is used to modify the initial value each time the loop runs, so that the condition can eventually become false. Syntax for for loop:
+
+for (initial value; condition; increment/decrement) {
+    // code block to be executed
+}
+
+here's an example of using a for loop in JavaScript:
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+In this example, the loop initializes the i variable to 0. The loop will continue to run as long as i is less than 5, and i will be incremented by 1 each time the loop runs. As a result, the output will be:
+
+0
+1
+2
+3
+4
+
+
 3. What is while loop ?
+Ans:  A while loop in JavaScript is a control flow statement that allows you to execute a block of code repeatedly while a certain condition is met. Here is an example:
+
+let counter = 1;
+
+while (counter <= 5) {
+  console.log(counter);
+  counter++;
+}
+
+// Output:
+// 1
+// 2
+// 3
+// 4
+// 5
+
+In this example, the counter variable is initialized to 1. The while loop checks if the value of counter is less than or equal to 5. If it is, the code inside the loop block is executed, which logs the value of counter to the console. The value of counter is then incremented by 1 using the counter++ operator. The loop continues to execute until the condition counter <= 5 is no longer met.
+
+
 4. What is the difference between for loop and while loop ?
+The main difference between a for loop and a while loop in JavaScript is the way they control the number of iterations in a code block.
+
+A for loop is best used when you know the exact number of times you want to iterate. It has three parts: an initialization expression, a condition expression, and an increment/decrement expression.
+
+Example:
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// Output:
+// 0
+// 1
+// 2
+// 3
+// 4
+
+A while loop, on the other hand, is best used when you want to repeatedly execute a code block as long as a certain condition is met. It only has one part, a condition expression.
+
+Example:
+let i = 0;
+
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+// Output:
+// 0
+// 1
+// 2
+// 3
+// 4
+
+In general, use a for loop when you know how many iterations you want to execute, and use a while loop when you want to continue iterating until a specific condition is met.
+
+
 5. What is the purpose of loop ?
+The purpose of loops in programming is to repeat a specific block of code multiple times, often with different inputs or conditions. Loops are an essential tool for automating repetitive tasks and making the code more efficient and less prone to errors.
+
+Loops are used to:
+
+Perform an action a specific number of times
+Iterate over arrays, strings, or other data structures
+Repeat a task until a certain condition is met
+Traverse a tree or other complex data structure
+With loops, you can avoid having to write the same code multiple times, saving time and improving the readability of your code. Loops can also simplify complex logic by breaking it down into smaller, manageable pieces.
+
 6. How to use for loop ?
+A for loop in JavaScript allows you to execute a block of code a specified number of times. The basic structure of a for loop is as follows:
+
+for (initialization; condition; increment/decrement) {
+  // code block to be executed
+}
+
+Here's an example that uses a for loop to print the numbers 0 through 4 to the console:
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// Output:
+// 0
+// 1
+// 2
+// 3
+// 4
+
+In this example:
+
+The initialization part declares and initializes a variable i with a value of 0.
+The condition part specifies that the loop should continue as long as i is less than 5.
+The increment/decrement part increments i by 1 after each iteration of the loop.
+The code block inside the for loop is executed repeatedly until the condition i < 5 is no longer met. Each time the loop runs, the value of i is logged to the console.
+
 7. Display "Ajke amar mon valo nei" for 39 times. (loop)
+You can use a for loop to repeat the message "Ajke amar mon valo nei" 39 times in JavaScript. Here's an example:
+
+for (let i = 0; i < 39; i++) {
+  console.log("Ajke amar mon valo nei");
+}
+
+In this example, the for loop initializes the variable i with a value of 0, and continues executing the code block as long as i is less than 39. After each iteration, the value of i is incremented by 1. The message "Ajke amar mon valo nei" is logged to the console 39 times.
+
+
 8. Display numbers between 58 to 98.  (loop)
+You can use a for loop to display the numbers between 58 and 98 in JavaScript. Here's an example:
+
+for (let i = 58; i <= 98; i++) {
+  console.log(i);
+}
+
+In this example, the for loop initializes the variable i with a value of 58, and continues executing the code block as long as i is less than or equal to 98. After each iteration, the value of i is incremented by 1. The numbers between 58 and 98 are logged to the console.
+
+
 9. Show all even numbers from 412 to 456 
-10. Show all odd numbers from 581 to 623
+for (let i = 412; i <= 456; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+In this example, the for loop initializes the variable i with a value of 412, and continues executing the code block as long as i is less than or equal to 456. After each iteration, the value of i is incremented by 1.
+
+The if statement inside the loop checks if the current value of i is divisible by 2 using the modulus operator (%). If i is an even number, it is logged to the console.
+
+10. Sfor (let i = 581; i <= 623; i++) {
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
+
+In this example, the for loop initializes the variable i with a value of 581, and continues executing the code block as long as i is less than or equal to 623. After each iteration, the value of i is incremented by 1.
+
+The if statement inside the loop checks if the current value of i is not divisible by 2 using the modulus operator (%). If i is an odd number, it is logged to the console.
+
+
 11. Declear an array for all the topics that you have learned last few days. Then display all the topics using loop. 
+Ans:  let topics = [ "HTML", "CSS","BootStrap", "TailwindCSS", "JavaScript",];
+
 12. Create an array for all the mobile phones you have used before. Then display all the mobile phones using while loop.
+Ans:
+// Create an array of mobile phones
+const mobilePhones = ["Symphony L30", "Symphony P6", "Symphony P11", "Walton", "Oppo F1s"];
+
+// Use a while loop to display each mobile phone
+let i = 0;
+while (i < mobilePhones.length) {
+  console.log(mobilePhones[i]);
+  i++;
+}
+
 13. Run a loop from 30 to 86. This loop will stop if the value get higer than 44.
+Ans:  
+for (let i = 30; i <= 86; i++) { 
+   if (i > 44) {
+       break;
+   }
+   console.log(i);
+}
+
 14. Write the price of the books that you have. Display the prices if the prices is lowe than 200.
-  
+Ans: 
+// Create an array of book prices
+const bookPrices = [250, 150, 99, 175, 120, 180];
+
+// Use a for loop to display book prices that are less than 200
+for (let i = 0; i < bookPrices.length; i++) {
+  if (bookPrices[i] < 200) {
+    console.log(bookPrices[i]);
+  }
+}
+
 */
