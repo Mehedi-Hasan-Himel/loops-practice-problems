@@ -198,7 +198,6 @@
    console.log(arr); // Output: [1, 2, 3, undefined]
 
 
-
    12. Remove the first element from an array ?
    Ans: You can remove the first element from an array in JavaScript using the shift() method:
    let arr = [1, 2, 3, 4];
@@ -219,9 +218,46 @@
 ================================================
 
 1. Meaning of > , < , >= , <= , == , === , != , !==
-2. Meaning of && , ||
-3. let's say you have X amount of money, If you have more than 80,000 then you will buy a MacBook. If more than 60,000 then you will buy Lenovo Yoga. If you ave more than 20,000 then you will buy used laptop. otherwise you will use your phone.  
+Ans: These are comparison operators in JavaScript used to compare values and return a boolean value of true or false based on the comparison:
 
+1- `>` (Greater Than) returns true if the value on the left is greater than the value on the right.
+
+2- `<` (Less Than) returns true if the value on the left is less than the value on the right.
+
+3- `>=` (Greater Than or Equal To) returns true if the value on the left is greater than or equal to the value on the right.
+
+4- `<=` (Less Than or Equal To) returns true if the value on the left is less than or equal to the value on the right.
+
+5- `==` (Equal To) returns true if the value on the left is equal to the value on the right, after type coercion.
+
+6- `===` (Strict Equal To) returns true if the value on the left is equal to the value on the right, without type coercion.
+
+7- `!=` (Not Equal To) returns true if the value on the left is not equal to the value on the right, after type coercion.
+
+8- `!==` (Strict Not Equal To) returns true if the value on the left is not equal to the value on the right, without type coercion.
+It's recommended to use === and !== over == and != to avoid unexpected results due to type coercion.
+
+
+2. Meaning of `&&` , `||`
+Ans: `&&` and `|| `are logical operators in JavaScript, used for evaluating conditions in if statements and other control structures.
+
+1- `&&` represents logical AND and returns the first falsy value or the last value if all are truthy.
+
+2 - `||` represents logical OR and returns the first truthy value or the last value if all are falsy.
+
+
+3. let's say you have X amount of money, If you have more than 80,000 then you will buy a MacBook. If more than 60,000 then you will buy Lenovo Yoga. If you have more than 20,000 then you will buy used laptop. otherwise you will use your phone.  
+Ans:  
+   let money = 80000;
+   if (money > 80000) {
+      console.log('I will buy a MacBook');
+   } else if (money > 60000) {
+      console.log('I will buy Lenovo Yoga');
+   } else if (money > 20000) {
+      console.log('I will buy used laptop');
+   } else { 
+      console.log('I will use my phone');    
+   }     
 */
 
 /*
